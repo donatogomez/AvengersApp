@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4CG-6h-mBC" customClass="VillainsCollectionViewCell" customModule="AvengersApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LAB-FO-Cqo">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="251"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AB9-TD-oqF">
+                        <rect key="frame" x="64" y="32" width="286" height="171.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="AB9-TD-oqF" secondAttribute="height" multiplier="5:3" id="Qj4-gF-2lQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capitana Marvel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxc-10-uJU">
+                        <rect key="frame" x="131" y="208.5" width="152.5" height="42.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oxc-10-uJU" secondAttribute="bottom" id="AgS-YO-MUF"/>
+                    <constraint firstItem="oxc-10-uJU" firstAttribute="centerX" secondItem="LAB-FO-Cqo" secondAttribute="centerX" id="CJb-dA-bNd"/>
+                    <constraint firstItem="oxc-10-uJU" firstAttribute="top" secondItem="AB9-TD-oqF" secondAttribute="bottom" constant="5" id="KkU-Qp-lcv"/>
+                    <constraint firstItem="AB9-TD-oqF" firstAttribute="top" secondItem="LAB-FO-Cqo" secondAttribute="top" constant="32" id="hXG-Zs-xjD"/>
+                    <constraint firstItem="AB9-TD-oqF" firstAttribute="leading" secondItem="LAB-FO-Cqo" secondAttribute="leading" constant="64" id="kBM-gG-8OA"/>
+                    <constraint firstAttribute="trailing" secondItem="AB9-TD-oqF" secondAttribute="trailing" constant="64" id="kND-ma-6rC"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="414" height="251"/>
+            <connections>
+                <outlet property="imageCell" destination="AB9-TD-oqF" id="Kmr-cI-5O7"/>
+                <outlet property="nameCell" destination="oxc-10-uJU" id="9a0-KP-nua"/>
+                <outlet property="viewCell" destination="LAB-FO-Cqo" id="gCQ-4z-pQd"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="460.37946428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
